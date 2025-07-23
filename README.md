@@ -9,7 +9,7 @@ Built using **HTML**, **Tailwind CSS**, and **Vanilla JavaScript** — now with 
 
 ![Screenshot](screenshot.png)
 
-> Want to try it live? [**Click here to play on GitHub Pages**](https://your-username.github.io/rock-paper-scissors-playful/)
+> Want to try it live? [**Click here to play on GitHub Pages**](https://theviper008.github.io/Rock-Paper-Scissors-Game/)
 
 ---
 
