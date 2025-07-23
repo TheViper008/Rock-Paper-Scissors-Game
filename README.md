@@ -7,7 +7,7 @@ Built using **HTML**, **Tailwind CSS**, and **Vanilla JavaScript** — now with 
 
 ## 🖼️ Preview
 
-![Screenshot](https://your-screenshot-url-if-any)
+![Screenshot](screenshot.png)
 
 > Want to try it live? [**Click here to play on GitHub Pages**](https://your-username.github.io/rock-paper-scissors-playful/)
 
