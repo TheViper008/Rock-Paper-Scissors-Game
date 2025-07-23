@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fredoka', sans-serif;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gradient-to-br from-pink-300 via-yellow-200 to-teal-300 min-h-screen flex items-center justify-center p-6">
+    <div class="bg-white rounded-[2rem] shadow-2xl p-10 max-w-md w-full border-4 border-yellow-300">
+
+        <!-- Header -->
+        <div class="text-center mb-6">
+            <h1 class="text-4xl font-bold text-pink-600 mb-2">🎮 Rock Paper Scissors 🎉</h1>
+            <p class="text-lg text-teal-700">Choose your weapon wisely!</p>
+        </div>
+
+        <!-- Score Board -->
+        <div class="flex justify-between mb-6 bg-yellow-100 rounded-2xl p-4 shadow-inner">
+            <div class="text-center">
+                <p class="text-md text-gray-700 mb-1">👩 You</p>
+                <p class="text-3xl font-bold text-pink-500" id="playerScore">0</p>
+            </div>
+            <div class="text-center">
+                <p class="text-md text-gray-700 mb-1">🤖 Computer</p>
+                <p class="text-3xl font-bold text-blue-500" id="computerScore">0</p>
+            </div>
+        </div>
+
+        <!-- Game Display -->
+        <div class="flex justify-around items-center mb-6">
+            <div class="text-center">
+                <p class="text-sm text-gray-600 mb-2">You</p>
+                <div class="text-6xl" id="playerChoice">❓</div>
+            </div>
+            <div class="text-2xl font-bold text-gray-500">VS</div>
+            <div class="text-center">
+                <p class="text-sm text-gray-600 mb-2">Computer</p>
+                <div class="text-6xl" id="computerChoice">❓</div>
+            </div>
+        </div>
+
+        <!-- Result Message -->
+        <div class="text-center mb-6">
+            <p class="text-xl font-semibold text-gray-800 animate-bounce" id="resultMessage">✨ Make your choice! ✨</p>
+        </div>
+
+        <!-- Choice Buttons -->
+        <div class="grid grid-cols-3 gap-4 mb-6">
+            <button onclick="playGame('rock')"
+                class="bg-pink-200 hover:bg-pink-300 rounded-full p-6 shadow-lg transition-all duration-200 transform hover:scale-110 active:scale-95">
+                <div class="text-4xl mb-1">🪨</div>
+                <div class="text-sm font-semibold text-pink-800">Rock</div>
+            </button>
+            <button onclick="playGame('paper')"
+                class="bg-blue-200 hover:bg-blue-300 rounded-full p-6 shadow-lg transition-all duration-200 transform hover:scale-110 active:scale-95">
+                <div class="text-4xl mb-1">📄</div>
+                <div class="text-sm font-semibold text-blue-800">Paper</div>
+            </button>
+            <button onclick="playGame('scissors')"
+                class="bg-yellow-200 hover:bg-yellow-300 rounded-full p-6 shadow-lg transition-all duration-200 transform hover:scale-110 active:scale-95">
+                <div class="text-4xl mb-1">✂️</div>
+                <div class="text-sm font-semibold text-yellow-800">Scissors</div>
+            </button>
+        </div>
+
+        <!-- Reset Button -->
+        <button onclick="resetGame()"
+            class="w-full bg-gradient-to-r from-pink-500 to-yellow-400 hover:from-pink-600 hover:to-yellow-500 text-white font-semibold py-3 px-6 rounded-full transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-md">
+            🔄 Reset Game
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
